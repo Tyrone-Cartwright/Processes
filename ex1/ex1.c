@@ -2,6 +2,9 @@
 // (e.g., x) and set its value to something (e.g., 100). What value is the variable in the child process?
 // What happens to the variable when both the child and parent change the value of x?
 
+// 1. variable value in child process remains the same value as the initial value
+// 2. changing value during child process will change value of child process value on exit / same for parent
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
